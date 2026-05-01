@@ -148,9 +148,7 @@ IMPORTANT NOTES
 - Run notebooks in sequence
 - Ensure required libraries are installed
 
---------------------------------------------------
-INTERVIEW EXPLANATION (SHORT)
---------------------------------------------------
+
 
 This project analyzes stock data using EDA techniques like correlation, volatility, and moving averages. It also builds forecasting models such as ARIMA, Random Forest, and LSTM. The workflow includes data preprocessing, feature engineering, model training, evaluation, and visualization.
 
