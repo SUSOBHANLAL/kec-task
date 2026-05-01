@@ -1,0 +1,164 @@
+STOCK ANALYSIS & FORECASTING PROJECT
+
+--------------------------------------------------
+PROJECT OVERVIEW
+--------------------------------------------------
+This project performs Exploratory Data Analysis (EDA) and stock price forecasting.
+
+Features:
+- Moving Averages (SMA, EMA)
+- Volatility Analysis
+- Correlation Analysis
+- Data Visualization (Matplotlib, Seaborn, Plotly)
+- Predictive Models (ARIMA, Random Forest, LSTM)
+
+--------------------------------------------------
+SETUP INSTRUCTIONS
+--------------------------------------------------
+
+1. Clone the Repository
+
+git clone https://github.com/SUSOBHANLAL/kec-task.git
+cd kec-task
+
+--------------------------------------------------
+2. ADD DATASET
+--------------------------------------------------
+
+Download historical stock CSV files and update the file paths in code.
+
+Example:
+
+CSV_FILES = {
+    "HLL":      r"YOUR_PATH/HLL Historical Data.csv",
+    "TCS":      r"YOUR_PATH/TCS Historical Data.csv",
+    "RELIANCE": r"YOUR_PATH/RELI Historical Data.csv",
+    "MSFT":     r"YOUR_PATH/MSFT Historical Data.csv",
+    "HDBK":     r"YOUR_PATH/HDBK Historical Data.csv",
+}
+
+NOTE:
+- Update paths based on your system
+- CSV format should include:
+  Date, Price, Open, High, Low, Vol., Change %
+
+--------------------------------------------------
+3. RUN EDA NOTEBOOKS
+--------------------------------------------------
+
+Go to EDA folder:
+
+cd EDA
+
+Start Jupyter Notebook:
+
+jupyter notebook
+
+Run notebooks CELL BY CELL.
+
+--------------------------------------------------
+EDA FILES & OUTPUTS
+--------------------------------------------------
+
+1. corelation.ipynb
+Output: output_charts_corelation/
+- Correlation matrix
+- Heatmaps
+
+2. Data Analysis.ipynb
+Output: output_charts_data_analysis/
+- Summary statistics
+- Price trends
+- Volume analysis
+
+3. moving avg.ipynb
+Output: output_charts_moving_avg/
+- SMA and EMA trends
+
+4. violity analysis.ipynb
+Output: output_charts_violity/
+- Daily returns
+- Rolling volatility
+
+5. VISUALIZATION.ipynb
+Output: output_for_visuals/
+- Advanced charts
+- Interactive plots
+
+--------------------------------------------------
+4. RUN PREDICTIVE MODELS
+--------------------------------------------------
+
+Open:
+
+predictivemodel.ipynb
+
+Run all cells step-by-step.
+
+--------------------------------------------------
+MODELS USED
+--------------------------------------------------
+
+1. ARIMA
+- Time series forecasting model
+
+2. Random Forest
+- Machine learning model using lag features
+
+3. LSTM
+- Deep learning model for sequence prediction
+
+--------------------------------------------------
+EVALUATION METRICS
+--------------------------------------------------
+
+Each model is evaluated using:
+
+- RMSE (Root Mean Squared Error)
+- MAE (Mean Absolute Error)
+- MAPE (Mean Absolute Percentage Error)
+
+--------------------------------------------------
+WORKFLOW
+--------------------------------------------------
+
+1. Load data
+2. Clean and preprocess
+3. Perform EDA
+4. Feature engineering
+5. Train models
+6. Evaluate models
+7. Visualize results
+
+--------------------------------------------------
+OUTPUT FOLDERS
+--------------------------------------------------
+
+output_charts_corelation     -> Correlation results
+output_charts_data_analysis  -> Data analysis charts
+output_charts_moving_avg     -> Moving averages
+output_charts_violity        -> Volatility charts
+output_for_visuals           -> Advanced visualizations
+
+--------------------------------------------------
+IMPORTANT NOTES
+--------------------------------------------------
+
+- Update file paths before running
+- Run notebooks in sequence
+- Ensure required libraries are installed
+
+--------------------------------------------------
+INTERVIEW EXPLANATION (SHORT)
+--------------------------------------------------
+
+This project analyzes stock data using EDA techniques like correlation, volatility, and moving averages. It also builds forecasting models such as ARIMA, Random Forest, and LSTM. The workflow includes data preprocessing, feature engineering, model training, evaluation, and visualization.
+
+--------------------------------------------------
+FUTURE IMPROVEMENTS
+--------------------------------------------------
+
+- Live stock data integration
+- Flask API deployment
+- React dashboard
+- Model optimization
